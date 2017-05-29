@@ -1,5 +1,5 @@
 # FizzBuzz-Using-Angular2-SpringBoot
-
+                  Angular2 Mini Project
 Here I'm using Angular2,SpringBoot,Bootstrap,JQuery and H2(DB).
 
 step 1: -------------->  First Run the SpringBoot
