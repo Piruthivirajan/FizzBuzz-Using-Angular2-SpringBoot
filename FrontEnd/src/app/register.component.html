@@ -1,0 +1,71 @@
+
+    <br /><br />
+ 
+<div class="top-content">
+            <div class="inner-bg">
+                <div class="container">                	
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h3 align="center">Register Form</h3>
+                        </div>
+                    </div>                    
+                  
+                        <div class="col-sm-6 col-sm-offset-3 text">
+                        <div class="form-box">
+                            <div class="form-top">
+                                <div class="form-top-left">
+         
+                                </div>
+                                <div class="form-top-right">
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                            </div>
+                            <div class="form-bottom">
+                              <form  role="form" #form="ngForm" (ngSubmit)="register(form.value)" ngNativeValidate>
+
+                                    <div class="form-group form-group has-success has-feedback">  <div class="form-group">
+                                        <label class="sr-only" for="form-first-name">User name</label>
+                                       <input type="text" class="form-control" id="name" placeholder="Enter  Your name" name="name" [(ngModel)]="name" required />
+                                    </div></div>
+
+                                    
+                                    <div class="form-group form-group has-success has-feedback">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-password">Password</label>
+                                        <input type="password" class="form-control" id="password" placeholder="Enter password" name="password" [(ngModel)]="password" required />
+                                    </div></div>
+                                   
+                                    
+                                     <div class="form-group form-group has-success has-feedback">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-confirmpassword">Confirm name</label>
+                                        <input type="password" class="form-control" id="confirmpassword"  onkeyup='check();' placeholder="Confirm password" name="confirmpassword" [(ngModel)]="confirmpassword" required  validateEqual="password" />
+                                          <span id='message'></span>
+                                          </div>
+                                    </div>
+                                  
+                                 
+                                
+
+                                    <div class="form-group">       
+                                    <button type="submit" class="btn btn-primary"  ><span class=" 	glyphicon glyphicon-log-in"> Sign Up</span></button>
+                                      
+                                  
+                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                     <a [routerLink]="['/login']" class="btn btn-link"><span class="	glyphicon glyphicon-share"> Cancel</span></a>
+                                    </div>
+                             
+                                    
+                                </form>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>        
+
+
+
+
+        
